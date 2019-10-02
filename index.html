@@ -70,12 +70,8 @@
       $('.menu').draggable();
     }
     
-	navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationFailure, {enableHighAccuracy: true},
-    		function(position) {
-	    		alert('Последний раз вас засекали здесь: ' +
-		    position.coords.latitude + ", " + position.coords.longitude);
-	}
-	);
+navigator.geolocation.getCurrentPosition(
+		    geolocationSuccess, geolocationFailure, {enableHighAccuracy: true});
 </script>
 </body>
 </html>
