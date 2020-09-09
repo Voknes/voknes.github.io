@@ -135,8 +135,8 @@
           <h2 class="popular-heading pb-5 pt-4">Корзина</h2>
             <div class="row">
               <div class="col-12">
-                <div class="table-responsive">
-              <table class="table">
+                <div class="">
+              <table class="table basket-table">
                 <thead class="table-borderless">
                   <tr>
                     <th class="text-small">Товар</th>
@@ -150,7 +150,22 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img class="img-basket" src="img/boy.jpg" alt=""></td>
+
+                    <td aria-label="Товар" class="desc"><img class="img-basket" src="img/boy.jpg" alt=""></td>
+                    <td aria-label="Описание" class="desc">T-Shirt with Long Sleeves</td>
+                    <td aria-label="Размер" class="desc">S</td>
+                    <td aria-label="Цена" class="desc">1000 руб</td>
+                    <td aria-label="Количество" class="desc">
+                      <div class="inputNumber">
+                        <div class="minus">-</div>
+                        <div class="number">1</div>
+                        <div class="plus">+</div>
+                      </div>
+                    </td>
+                    <td aria-label="Итого" class="desc product_price" id="price">1000 руб</td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+
+                    <!-- <td><img class="img-basket" src="img/boy.jpg" alt=""></td>
                     <td class="desc">T-Shirt with Long Sleeves</td>
                     <td class="desc">S</td>
                     <td class="desc">1000 руб</td>
@@ -162,10 +177,25 @@
                       </div>
                     </td>
                     <td class="desc product_price" id="price">1000 руб</td>
-                    <td><i class="fas fa-trash-alt"></i></td>
+                    <td><i class="fas fa-trash-alt"></i></td> -->
                   </tr>
                   <tr>
-                    <td><img class="img-basket" src="img/boy.jpg" alt=""></td>
+
+                    <td aria-label="Товар" class="desc"><img class="img-basket" src="img/boy.jpg" alt=""></td>
+                    <td aria-label="Описание" class="desc">T-Shirt with Long Sleeves</td>
+                    <td aria-label="Размер" class="desc">S</td>
+                    <td aria-label="Цена" class="desc">1000 руб</td>
+                    <td aria-label="Количество" class="desc">
+                      <div class="inputNumber">
+                        <div class="minus">-</div>
+                        <div class="number">1</div>
+                        <div class="plus">+</div>
+                      </div>
+                    </td>
+                    <td aria-label="Итого" class="desc product_price" id="price">1000 руб</td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+
+                    <!-- <td><img class="img-basket" src="img/boy.jpg" alt=""></td>
                     <td class="desc">T-Shirt with Long Sleeves</td>
                     <td class="desc">S</td>
                     <td class="desc">1000 руб</td>
@@ -177,15 +207,15 @@
                       </div>
                     </td>
                     <td class="desc product_price" id="price">1000 руб</td>
-                    <td><i class="fas fa-trash-alt"></i></td>
+                    <td><i class="fas fa-trash-alt"></i></td> -->
                   </tr>
 
                 </tbody>
               </table>
             </div>
             </div>
-              <div class="col-8 text-small clear-busket"><i class="fas fa-trash-alt"></i><a class="text-muted" href="#"> Очистить корзину</a></div>
-              <div class="col-4 price-sum pb-5">
+              <div class="col-xl-8 col-md-7 col-12 text-small clear-busket pb-5"><i class="fas fa-trash-alt"></i><a class="text-muted" href="#"> Очистить корзину</a></div>
+              <div class="col-xl-4 col-md-5 col-12 price-sum pb-5">
                 <div>
                   <span>Итого: </span><span>2000 руб</span>
                 </div>
@@ -198,7 +228,7 @@
 
       </section>
 
-      <footer class="container py-5">
+      <footer class="container py-5 px-5">
         <div class="row">
 
           <div class="col-6 col-md">
