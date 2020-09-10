@@ -36,8 +36,8 @@ table.basket-table td {padding: 0.6rem 1rem; border-bottom: 1px solid #e8e9eb;} 
 
       .nav1 {
         font-weight: 300;
-        letter-spacing: 0.5px;
-        font-size: small!important;
+        letter-spacing: 0px!important;
+        font-size: 2.5vw!important;
     }
 
 
