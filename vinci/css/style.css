@@ -34,6 +34,12 @@ table.basket-table td {padding: 0.6rem 1rem; border-bottom: 1px solid #e8e9eb;} 
         font-weight: bold;
       }
 
+      .nav1 {
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        font-size: small!important;
+    }
+
 
 
   /* tr {
@@ -160,8 +166,8 @@ h2 {
 
 .nav1 {
     font-weight: 300;
-    letter-spacing: .1vw;
-    font-size: 1vw;
+    letter-spacing: 0.5px;
+    font-size: 12px;
 }
 
 .logo img {
@@ -428,71 +434,5 @@ label {
 
 /* search */
 
-.search-box {
-    -webkit-transition: width 0.5s, border-radius 0.5s, background 0.5s, box-shadow 0.5s;
-    transition: width 0.5s, border-radius 0.5s, background 0.5s, box-shadow 0.5s;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    /* background: #ebebeb; */
-  }
-
-  .search-box-xs {
-    -webkit-transition: width 0.5s, border-radius 0.5s, background 0.5s, box-shadow 0.5s;
-    transition: width 0.5s, border-radius 0.5s, background 0.5s, box-shadow 0.5s;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background: #f8f9fa;
-  }
-
-  .search-box + label .search-icon {
-    color: #B4D896;
-  }
-  /* .search-box:hover {
-    color: #B4D896;
-  } */
-  /* .search-box:hover + label .search-icon {
-    color: white;
-  } */
-  .search-box:focus {
-    /* -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-    transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s; */
-    border: none;
-    outline: none;
-    box-shadow: none;
-    padding-left: 10px;
-    cursor: text;
-    width: 180px;
-    /* border-radius: auto; */
-    background: #b4d89652;
-    /* color: black; */
-  }
-  /* .search-box:focus + label .search-icon {
-    color: black;
-  } */
-  .search-box:not(:focus) {
-    text-indent: -5000px;
-  }
   
-  #search-submit {
-    position: relative;
-    left: -5000px;
-  }
-  
-  .search-icon {
-    position: relative;
-    left: -35px;
-    color: #B4D896;
-    cursor: pointer;
-  }
-
-  .search-container {
-    display: inline-block;
-    /* float: right; */
-  }
 
