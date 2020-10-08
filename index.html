@@ -1,20 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Сибирские сети">
+
+  <title>Сибирские сети</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link href="css/one-page-wonder.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <div class="list-group">
-    <a href="vinci/index.html" target="_blank" class="list-group-item list-group-item-action">Главная</a>
-    <a href="vinci/catolog.html" target="_blank" class="list-group-item list-group-item-action">Каталог</a>
-    <a href="vinci/product.html" target="_blank" class="list-group-item list-group-item-action">Карта товара</a>
-    <a href="vinci/search_catolog.html" target="_blank" class="list-group-item list-group-item-action">Поиск</a>
-    <a href="vinci/shop_basket.html" target="_blank" class="list-group-item list-group-item-action">Корзина</a>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom position-absolute fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="logo" src="img/logo.svg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Новосибирск</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">Отличное качество</h1>
+        <h2 class="masthead-subheading mb-0">За малые деньги</h2>
+        <a href="#application" class="btn btn-primary btn-xl rounded-pill mt-5">Оставить заявку</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section class="call-to-action text-center">
+    <a name='application'></a>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto p-5">
+          <h2 class="display-5">Заявка на подключение</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form method="POST" id="ajax_form" action="">
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-4 mb-md-4">
+                <input type="tel" name="tel" id="phone" required class="form-control form-control-lg" placeholder="Укажите ваш номер телефона">
+              </div>
+              <div class="col-12 col-md-3">
+              <!-- <input type="button" id="btn" class="btn btn-block btn-lg btn-primary" value="Подключить"> -->
+                <input type="button" id="btn" class="btn btn-block btn-lg btn-primary" value="Отправить">
+              </div>
+            </div>
+          </form>
+          <div id="result_form"></div>
+          <p class="m-4 text-center small">Нажимая на кнопку, вы даете согласие на обработку персональных данных <br> и соглашаетесь c <a target="_blank" href="https://nsk.sibset.ru/public-offer/">политикой конфиденциальности</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/tarif.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Выгодные тарифы oт 399 руб/мес</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid" src="img/02.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Попробуй любой тариф за 50 руб</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        <div class="portfolio-item">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>399 руб/мес</h2>
+              <p class="mb-0">Интернет 100 мбит/с</p>
+              <br>
+              <a href="#application" class="btn btn-primary mt-5">Оставить заявку</a>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="portfolio-item">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>559 руб/мес</h2>
+              <p class="mb-0">Интернет 100 мбит/с</p>
+              <p class="mb-0">ТВ 106 канала</p>
+              <a href="#application" class="btn btn-primary mt-5">Оставить заявку</a>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="portfolio-item">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>659 руб/мес</h2>
+              <p class="mb-0">Интернет 100 мбит/с</p>
+              <p class="mb-0">ТВ 163 канала</p>
+              <a href="#application" class="btn btn-primary mt-5">Оставить заявку</a>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="portfolio-item">
+          <span class="caption">
+            <span class="caption-content">
+              
+              <h3>Не знаете какой тариф выбрать?</h3>
+              <p class="mb-0">Оставьте заявку на обратный звонок, мы подскажем</p>
+              <a href="#application" class="btn btn-primary mt-5">Оставить заявку</a>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+</div>
+      </div>
+    </div>
   </div>
+  <br>
+  <br>
+  <br>
+
+  <footer class="py-3 bg-policy">
+    <div class="container">
+      <p class="m-0 text-white small"><a target="_blank" href="https://nsk.sibset.ru/public-offer/">Политика конфиденциальности</a></p>
+    </div>
+  </footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заявка принята</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Пожалуйста, ожидайте звонка
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Хорошо</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.inputmask.min.js"></script>
+  <script>
+    // $(document).ready(function() {
+    //   $("#phone").mask("+7 (999) 999 9999");
+    // });
+    // $(":input").inputmask();
+
+    $("#phone").inputmask({"mask": "+7 (999) 999-9999"});
+    //$("#exampleModal").modal('show');
+  </script>
   
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="ajax.js"></script>
 </body>
+
 </html>
